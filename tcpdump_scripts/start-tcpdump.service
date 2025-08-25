@@ -1,0 +1,12 @@
+[Unit]
+Description=Start tcpdump on eth0
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=forking
+User=root
+ExecStart=/bin/bash /root/start_tcpdump.sh
+
+[Install]
+WantedBy=multi-user.target

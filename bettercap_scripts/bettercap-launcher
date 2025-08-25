@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sudo /usr/bin/bettercap -no-colors -eval "events.stream off; set events.stream.output /var/log/bettercap_handshakes/bettercap-events.log; events.stream on" -caplet /usr/local/share/bettercap/caplets/pwnagotchi.cap -iface wlan1
