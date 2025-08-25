@@ -27,7 +27,7 @@ do
             output_file="${OPTARG}"
             ;;
         h)
-            exit_exit
+            exit_error
             ;;
     esac
 done
